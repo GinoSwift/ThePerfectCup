@@ -53,7 +53,7 @@
             <div class="col-lg-12">
                 <hr>
                 <h2 class="intro-text text-center">HOW TO MAKE
-                    <strong>THE PERFECT CUP OF COFFEE</strong>
+                    <strong>THE PERFECT CUP OF COFFEE YE</strong>
                 </h2>
                 <hr>
                 <img class="img-responsive img-border img-left" src="img/intro-pic.jpg" alt="">

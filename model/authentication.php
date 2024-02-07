@@ -35,4 +35,26 @@ class Authentication
         }
         return $result;
     }
+
+    public function changePassword($id, $password)
+    {
+        //1. db connect
+        $con = Database::connect();
+        $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        //2. write sql 
+        $sql = "UPDATE members SET password=:password,cpassword=:cpassword  where id=:id";
+        $statement = $con->prepare($sql);
+
+        try {
+            $statement->execute([
+                ':id' => $id,
+                ':password' => $password,
+                ':cpassword' => $password
+            ]);
+            return true;
+        } catch (PDOException $e) {
+            return false;
+        }
+    }
 }

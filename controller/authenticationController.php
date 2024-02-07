@@ -21,6 +21,11 @@ class AuthenticationController extends Authentication
         return $this->getMembersByID($id);
     }
 
+    public function changePw($id, $password)
+    {
+        return $this->changePassword($id, $password);
+    }
+
     public function sendMail($email)
     {
         $otp = rand(1000, 9999);

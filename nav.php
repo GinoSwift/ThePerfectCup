@@ -88,6 +88,7 @@ $auth_cont = new AuthenticationController();
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                     <li><a href="#">View Profile</a></li>
                                     <li><a href="logout.php">Log Out</a></li>
+                                    <li><a href="changePw.php?id=<?= $member['id'] ?>">Change Password</a></li>
                                 </ul>
                             </div>
                         </li>
